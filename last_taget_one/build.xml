@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Sample usage of Salesforce Ant tasks" default="deploy" basedir="." xmlns:sf="antlib:com.salesforce">
+
+
+    <property file="build.properties"/>
+  
+  <property environment="env"/>
+
+
+   <target name="deploy"  >
+
+	 
+   <sf:deploy
+
+	      
+      username="${sf.username}"
+
+	         
+      password="${sf.password}"
+
+	        
+      serverurl="${sf.serverurl}"
+
+	  
+      deployRoot="C:\Users\339919\.jenkins\workspace\Demo\SFDC_PoC\src"
+
+	     />
+
+	 
+</target>
+
+
+<target name="proxy">
+
+        <property name="proxy.host" value=" https://proxy.tcs.com " />
+
+        <property name="proxy.port" value="8080" />
+
+        <property name="proxy.user" value="339919" />
+
+        <property name="proxy.pwd" value="Feb@2017" />
+
+        <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" proxyuser="${proxy.user}" proxypassword="${proxy.pwd}" />
+
+    </target>
+
+</project>
+
+
+
+
+
