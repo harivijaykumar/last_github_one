@@ -22,29 +22,12 @@
       serverurl="${sf.serverurl}"
 
 	  
-      deployRoot="C:\Users\339919\.jenkins\workspace\Demo\SFDC_PoC\src"
+      deployRoot="C:\Program Files (x86)\Jenkins\workspace\last_jenkins_one\last_taget_one\src"
 
 	     />
 
 	 
 </target>
-
-
-<target name="proxy">
-
-        <property name="proxy.host" value=" https://proxy.tcs.com " />
-
-        <property name="proxy.port" value="8080" />
-
-        <property name="proxy.user" value="339919" />
-
-        <property name="proxy.pwd" value="Feb@2017" />
-
-        <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" proxyuser="${proxy.user}" proxypassword="${proxy.pwd}" />
-
-    </target>
-
-</project>
 
 
 
